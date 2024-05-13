@@ -8,6 +8,18 @@ CONDA_NAME := $(PACKAGE_NAME)-dev
 CONDA := conda run -n $(CONDA_NAME)
 CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p win-64 --channel conda-forge
 
+###   CUSTOM   ###
+
+.PHONY: get-data
+get-data:
+	kaggle competitions download -p data/ -c leash-BELKA -f test.parquet
+	unzip -o data/test.parquet.zip -d data/
+	rm data/test.parquet.zip
+
+	kaggle competitions download -p data/ -c leash-BELKA -f train.parquet
+	unzip -o data/train.parquet.zip -d data/
+	rm data/train.parquet.zip
+
 
 ###   ENVIRONMENT   ###
 
