@@ -1,4 +1,5 @@
 nav:
     - Home: index.md
     - Background: background
+    - Submissions: submissions
     - API: api
