@@ -1,3 +1,6 @@
 nav:
   - index.md
+  - experiments.md
+  - data.md
+  - getting-data.md
   - ...
