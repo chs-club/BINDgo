@@ -6,7 +6,7 @@ PACKAGE_PATH := $(PACKAGE_NAME)/
 TESTS_PATH := tests/
 CONDA_NAME := $(PACKAGE_NAME)-dev
 CONDA := conda run -n $(CONDA_NAME)
-CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p win-64 --channel conda-forge
+CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p win-64 -p osx-arm64 --channel conda-forge
 
 ###   CUSTOM   ###
 
