@@ -1,11 +1,11 @@
 docs_dir: docs
 
-site_name: leash_bio_kaggle
-site_author: oasci
+site_name: Leash Bio Kaggle Competition
+site_author: OASCI
 
 # Git host
 repo_name: oasci/leash_bio_kaggle
-repo_url: https://github.com/oasci/leash_bio_kaggle
+repo_url: https://github.com/oasci/leash-bio-kaggle
 
 # https://squidfunk.github.io/mkdocs-material/
 theme:
@@ -83,7 +83,6 @@ extra_css:
   - css/colors.css
 
 extra_javascript:
-  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
