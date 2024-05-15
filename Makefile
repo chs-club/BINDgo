@@ -195,15 +195,11 @@ mkdocs_port := $(shell \
 
 .PHONY: serve
 serve:
-	- rm -rf docs/submissions/
-	cp -r submissions/ docs/submissions/
 	echo "Served at http://127.0.0.1:$(mkdocs_port)/"
 	$(CONDA) mkdocs serve -a localhost:$(mkdocs_port)
 
 .PHONY: docs
 docs:
-	- rm -rf docs/submissions/
-	cp -r submissions/ docs/submissions/
 	$(CONDA) mkdocs build -d public/
 	- rm -f public/gen_ref_pages.py
 

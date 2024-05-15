@@ -58,6 +58,14 @@ plugins:
   - autorefs
   - material-plausible
   - table-reader
+  - mkdocs-jupyter:
+      no_input: False
+      include_requirejs: true
+      include_source: True
+      ignore: ["*.py"]
+      remove_tag_config:
+          remove_input_tags:
+              - hide_code
   - gen-files:
       scripts:
         - docs/gen_ref_pages.py
@@ -74,6 +82,12 @@ plugins:
         order: asc
         sort_type: natural
         order_by: title
+  - glightbox
+  - macros
+
+hooks:
+  - hooks/launchy.py
+colab_base_url: https://colab.research.google.com/github/oasci/leash-bio-kaggle/blob/main/docs
 
 extra:
   generator: false
@@ -81,6 +95,7 @@ extra:
 extra_css:
   - css/base.css
   - css/colors.css
+  - css/launchy.css
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
