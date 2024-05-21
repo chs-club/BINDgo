@@ -77,7 +77,7 @@ poetry-lock:
 
 .PHONY: install
 install:
-	$(CONDA) poetry install --no-interaction --without pytorch,tensorflow
+	$(CONDA) poetry install --without pytorch,tensorflow --no-interaction
 	- mkdir .mypy_cache
 	- $(CONDA) mypy --install-types --non-interactive --explicit-package-bases $(PACKAGE_NAME)
 
