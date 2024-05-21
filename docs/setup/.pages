@@ -1,6 +1,5 @@
 nav:
   - index.md
-  - experiments.md
-  - data.md
+  - env.md
   - getting-data.md
   - ...
