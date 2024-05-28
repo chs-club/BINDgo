@@ -49,9 +49,9 @@ Notes:
 
 ### Copy the Example Submission Directory
 
-1.  In the repository, locate the directory named `jane_doe`.
+1.  In the repository, there is a directory called `jane_doe` in the `docs/submissions/` directory.
     This directory serves as an example submission structure.
-2.  Create a copy of this directory and rename it with your own name. Run the following command:
+2.  Now, move into the submissions directory using `cd docs/submissions/` and create a copy of this directory and rename it with your own name:
 
     ```bash
     cp -r jane_doe your_name
