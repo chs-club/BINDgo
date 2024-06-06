@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "leash_bio_kaggle"
-version = "0.0.0"
+version = "0.0.0.post37"
 description = "Awesome `leash_bio_kaggle` is a Python package created with https://gitlab.com/oasci/software/snakeframe"
 authors = [
     "oasci <us@oasci.org>",
@@ -57,8 +57,8 @@ mkdocs-glightbox = "^0.4.0"
 mkdocs-macros-plugin = "^1.0.5"
 
 [tool.poetry.group.pytorch.dependencies]
-torch = "2.2.1"
-dgl = "2.1.0"
+torch = "==2.2.1"
+dgl = "==2.1.0"
 
 [tool.poetry.group.tensorflow.dependencies]
 tensorflow = "^2.16.1"
@@ -75,7 +75,7 @@ search = "\\[Unreleased\\]"
 replace = "[Unreleased]\n\n## [{new_version}] - {now:%Y-%m-%d}"
 
 [tool.poetry-dynamic-versioning]
-enable = true
+enable = false
 vcs = "git"
 format-jinja = "{%- if distance == 0 -%}{{ serialize_pep440(base) }}{%- else -%}{{ serialize_pep440(base, post=distance) }}{%- endif -%}"
 
