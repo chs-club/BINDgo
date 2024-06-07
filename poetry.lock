@@ -553,6 +553,17 @@ files = [
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
+name = "cloudpickle"
+version = "3.0.0"
+description = "Pickler class to extend the standard pickle.Pickler functionality"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "cloudpickle-3.0.0-py3-none-any.whl", hash = "sha256:246ee7d0c295602a036e86369c77fecda4ab17b506496730f2f576d9016fd9c7"},
+    {file = "cloudpickle-3.0.0.tar.gz", hash = "sha256:996d9a482c6fb4f33c1a35335cf8afd065d2a56e973270364840712d9131a882"},
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -811,6 +822,28 @@ psutil = ">=5.8.0"
 requests = ">=2.19.0"
 scipy = ">=1.1.0"
 torchdata = ">=0.5.0"
+tqdm = "*"
+
+[[package]]
+name = "dgllife"
+version = "0.3.2"
+description = "DGL-based package for Life Science"
+optional = false
+python-versions = "*"
+files = [
+    {file = "dgllife-0.3.2-py3-none-any.whl", hash = "sha256:83147cf8972fd55f3bcbc9ab940c826fd8f85fd6c7973ae8daad2e472228e488"},
+    {file = "dgllife-0.3.2.tar.gz", hash = "sha256:6a0baf112e5d89b0ced2d459872750540517eb03ae0a8cf71576c4b69fc6b553"},
+]
+
+[package.dependencies]
+hyperopt = "*"
+joblib = "*"
+networkx = ">=2.1"
+numpy = ">=1.14.0"
+pandas = "*"
+requests = ">=2.22.0"
+scikit-learn = ">=0.22.2"
+scipy = ">=1.1.0"
 tqdm = "*"
 
 [[package]]
@@ -1110,6 +1143,17 @@ test-full = ["adlfs", "aiohttp (!=4.0.0a0,!=4.0.0a1)", "cloudpickle", "dask", "d
 tqdm = ["tqdm"]
 
 [[package]]
+name = "future"
+version = "1.0.0"
+description = "Clean single-source support for Python 3 and 2"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+files = [
+    {file = "future-1.0.0-py3-none-any.whl", hash = "sha256:929292d34f5872e70396626ef385ec22355a1fae8ad29e1a734c3e43f9fbc216"},
+    {file = "future-1.0.0.tar.gz", hash = "sha256:bd2968309307861edae1458a4f8a4f3598c03be43b97521076aebf5d94c07b05"},
+]
+
+[[package]]
 name = "gast"
 version = "0.5.4"
 description = "Python AST that abstracts the underlying Python version"
@@ -1312,6 +1356,33 @@ brotli = ["brotli", "brotlicffi"]
 cli = ["click (==8.*)", "pygments (==2.*)", "rich (>=10,<14)"]
 http2 = ["h2 (>=3,<5)"]
 socks = ["socksio (==1.*)"]
+
+[[package]]
+name = "hyperopt"
+version = "0.2.7"
+description = "Distributed Asynchronous Hyperparameter Optimization"
+optional = false
+python-versions = "*"
+files = [
+    {file = "hyperopt-0.2.7-py2.py3-none-any.whl", hash = "sha256:f3046d91fe4167dbf104365016596856b2524a609d22f047a066fc1ac796427c"},
+    {file = "hyperopt-0.2.7.tar.gz", hash = "sha256:1bf89ae58050bbd32c7307199046117feee245c2fd9ab6255c7308522b7ca149"},
+]
+
+[package.dependencies]
+cloudpickle = "*"
+future = "*"
+networkx = ">=2.2"
+numpy = "*"
+py4j = "*"
+scipy = "*"
+six = "*"
+tqdm = "*"
+
+[package.extras]
+atpe = ["lightgbm", "scikit-learn"]
+dev = ["black", "nose", "pre-commit", "pytest"]
+mongotrials = ["pymongo"]
+sparktrials = ["pyspark"]
 
 [[package]]
 name = "identify"
@@ -5586,4 +5657,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "ddf4b739ed22941644dca9065048e6203ab340ed7bf5edfcfff28a3b718155bc"
+content-hash = "d71764a4f6b1a8d08f826f54a6321d81c1c04863ef83352e7ded79156f23bfb4"
