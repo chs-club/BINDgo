@@ -43,6 +43,10 @@ For Windows users, the file should be placed at `C:\Users\<username>\.kaggle\kag
 For Linux and macOS users, the file should be located at `~/.kaggle/kaggle.json`.
 Make sure to replace `<username>` with your actual username on your machine.
 
+!!! note
+
+    You often have to create the directory `.kaggle` if it does not already exist.
+
 To ensure that the `kaggle.json` file has the appropriate permissions, open your terminal or command prompt and run the following command:
 
 ```bash
