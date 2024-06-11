@@ -30,7 +30,7 @@ Similar progress in other fields suggest using ML to search across vast spaces c
 We hope that by providing BELKA we will democratize aspects of computational drug discovery and assist the community in finding new lifesaving medicines.
 
 Here, you’ll build predictive models to estimate the binding affinity of unknown chemical compounds to specified protein targets.
-You may use the training data provided; alternatively, there are a number of methods to make small molecule binding predictions without relying on empirical binding data (e.g. DiffDock, and this contest was designed to allow for such submissions).
+You may use the training data provided; alternatively, there are a number of methods to make small molecule binding predictions without relying on empirical binding data (e.g., DiffDock, and this contest was designed to allow for such submissions).
 
 Your work will contribute to advances in small molecule chemistry used to accelerate drug discovery.
 
