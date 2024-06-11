@@ -96,6 +96,7 @@ extra_css:
   - css/base.css
   - css/colors.css
   - css/launchy.css
+  - css/3dmol.css
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
