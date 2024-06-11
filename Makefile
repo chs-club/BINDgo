@@ -29,7 +29,7 @@ export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 .PHONY: conda-create
 conda-create:
 	- conda deactivate
-	conda remove -y -n $(CONDA_NAME) --all
+	- conda remove -y -n $(CONDA_NAME) --all
 	conda create -y -n $(CONDA_NAME)
 	$(CONDA) conda install -y python=$(PYTHON_VERSION)
 	$(CONDA) conda install -y conda-lock
