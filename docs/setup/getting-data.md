@@ -29,9 +29,11 @@ To do this, click on your Kaggle profile photo on the upper right and select `Se
 Under `Account`, there is an `API` section that will allow you to `Create New Token`.
 This will download a file called `kaggle.json`.
 
-```json
-{"username":"aalexmmaldonado","key":"1c8b25b85741554a1edd12a7c0c608de"}
-```
+??? example
+
+    ```json
+    {"username":"aalexmmaldonado","key":"1c8b25b85741554a1edd12a7c0c608de"}
+    ```
 
 !!! danger
 
@@ -42,6 +44,10 @@ Next, you need to place the `kaggle.json` file in a specific location on your ma
 For Windows users, the file should be placed at `C:\Users\<username>\.kaggle\kaggle.json`.
 For Linux and macOS users, the file should be located at `~/.kaggle/kaggle.json`.
 Make sure to replace `<username>` with your actual username on your machine.
+
+!!! note
+
+    You often have to create the directory `.kaggle` if it does not already exist.
 
 To ensure that the `kaggle.json` file has the appropriate permissions, open your terminal or command prompt and run the following command:
 
