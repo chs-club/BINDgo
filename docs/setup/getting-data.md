@@ -29,9 +29,11 @@ To do this, click on your Kaggle profile photo on the upper right and select `Se
 Under `Account`, there is an `API` section that will allow you to `Create New Token`.
 This will download a file called `kaggle.json`.
 
-```json
-{"username":"aalexmmaldonado","key":"1c8b25b85741554a1edd12a7c0c608de"}
-```
+??? example
+
+    ```json
+    {"username":"aalexmmaldonado","key":"1c8b25b85741554a1edd12a7c0c608de"}
+    ```
 
 !!! danger
 
