@@ -63,6 +63,7 @@ mkdocs-macros-plugin = "^1.0.5"
 torch = "==2.2.1"
 dgl = "==2.1.0"
 dgllife = "^0.3.2"
+torch-geometric = "^2.5.3"
 
 [tool.poetry.group.tensorflow.dependencies]
 tensorflow = "^2.16.1"
