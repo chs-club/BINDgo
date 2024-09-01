@@ -5,7 +5,7 @@ from pathlib import Path
 
 import mkdocs_gen_files
 
-SRC_DIR = "leash_bio_kaggle"
+SRC_DIR = "bindgo"
 WRITE_DIR = "api"
 
 for path in sorted(Path(SRC_DIR).rglob("*.py")):  #

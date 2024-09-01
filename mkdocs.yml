@@ -1,11 +1,11 @@
 docs_dir: docs
 
-site_name: Leash Bio Kaggle Competition
+site_name: BINDgo
 site_author: OASCI
 
 # Git host
-repo_name: oasci/leash_bio_kaggle
-repo_url: https://github.com/oasci/leash-bio-kaggle
+repo_name: chs-club/BINDgo
+repo_url: https://github.com/chs-club/BINDgo
 
 # https://squidfunk.github.io/mkdocs-material/
 theme:
@@ -72,7 +72,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: ["leash_bio_kaggle"]
+          paths: ["bindgo"]
           options:
             annotations_path: brief
             docstring_style: google
@@ -87,7 +87,7 @@ plugins:
 
 hooks:
   - hooks/launchy.py
-colab_base_url: https://colab.research.google.com/github/oasci/leash-bio-kaggle/blob/main/docs
+colab_base_url: https://colab.research.google.com/github/chs-club/BINDgo/blob/main/docs
 
 extra:
   generator: false
@@ -99,7 +99,6 @@ extra_css:
   - css/3dmol.css
 
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:

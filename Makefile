@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 PYTHON_VERSION := 3.11
 PYTHON_VERSION_CONDENSED := 311
-PACKAGE_NAME := leash_bio_kaggle
+PACKAGE_NAME := bindgo
 PACKAGE_PATH := $(PACKAGE_NAME)/
 TESTS_PATH := tests/
 CONDA_NAME := $(PACKAGE_NAME)-dev

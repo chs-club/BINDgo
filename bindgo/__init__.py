@@ -1,4 +1,4 @@
-"""Awesome `leash_bio_kaggle` is a Python package created with https://gitlab.com/oasci/software/snakeframe"""
+"""Awesome `bindgo` is a Python package created with https://gitlab.com/oasci/software/snakeframe"""
 
 from typing import Any
 
@@ -8,7 +8,7 @@ from ast import literal_eval
 
 from loguru import logger
 
-logger.disable("leash_bio_kaggle")
+logger.disable("bindgo")
 
 LOG_FORMAT = (
     "<green>{time:HH:mm:ss}</green> | "
@@ -38,11 +38,11 @@ def enable_logging(
     # https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.configure
     logger.configure(**config)
 
-    logger.enable("leash_bio_kaggle")
+    logger.enable("bindgo")
 
 
-if literal_eval(os.environ.get("leash_bio_kaggle_LOG", "False")):
-    level = int(os.environ.get("leash_bio_kaggle_LOG_LEVEL", 20))
-    stdout = literal_eval(os.environ.get("leash_bio_kaggle_STDOUT", "True"))
-    log_file_path = os.environ.get("leash_bio_kaggle_LOG_FILE_PATH", None)
+if literal_eval(os.environ.get("bindgo_LOG", "False")):
+    level = int(os.environ.get("bindgo_LOG_LEVEL", 20))
+    stdout = literal_eval(os.environ.get("bindgo_STDOUT", "True"))
+    log_file_path = os.environ.get("bindgo_LOG_FILE_PATH", None)
     enable_logging(level, stdout, log_file_path)

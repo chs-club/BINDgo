@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from leash_bio_kaggle import enable_logging
+from bindgo import enable_logging
 
 TEST_DIR = os.path.dirname(__file__)
 
